@@ -1,5 +1,9 @@
 body {
   height: 100%;
+  font-family: Poppins;
+  font-size: 18px;
+  line-height: 160%;
+  color: #021206;
 }
 
 .wrapper {
@@ -9,9 +13,11 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+.main {
+  flex: 1 1 100%;
+}
 .container {
-  max-width: 1040px;
+  max-width: 1158px;
   padding: 0px 15px;
   margin: 0 auto;
   box-sizing: content-box;
@@ -35,4 +41,15 @@ body {
   left: 0;
   top: 0;
   object-fit: cover;
+}
+
+.button {
+}
+.link {
+}
+.logo {
+  flex: 0 1 147px;
+  &__image {
+    width: 100%;
+  }
 }
