@@ -1,0 +1,52 @@
+.main {
+  &__heading {
+  }
+}
+
+//  heading block
+.heading {
+  &__container {
+  }
+  &__body {
+    display: flex;
+  }
+  &__info {
+  }
+  &__label {
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 150%;
+    & span {
+      background: linear-gradient(154.24deg, #3effc0 4.45%, #18ca90 83.73%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: #0b2349;
+    }
+    margin-bottom: 25px;
+  }
+  &__text {
+    font-size: 21px;
+    line-height: 160%;
+    opacity: 0.7;
+  }
+  &__form {
+  }
+  &__button {
+  }
+  &__link {
+  }
+  &__downloads {
+  }
+  &__image {
+    margin-right: -220px;
+    @media screen and (max-width: 1382px) {
+      margin-right: 0px;
+      max-width: 700px;
+
+      & img {
+        width: 100%;
+      }
+    }
+  }
+}
+//-------------------------------
