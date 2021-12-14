@@ -339,6 +339,13 @@ body {
   width: 100%;
 }
 
+h2 {
+  font-size: 45px;
+  line-height: 148%;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
 .header {
   padding: 35px 0px;
 }
@@ -510,6 +517,117 @@ body {
 
 .partners__icon {
   width: 100%;
+}
+
+.about__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-left: -80px;
+}
+
+.about__info {
+  max-width: 548px;
+}
+
+.about__text {
+  opacity: 0.7;
+  margin-bottom: 29px;
+}
+
+.about__text p:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.about__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__button {
+  margin-right: 25px;
+  background-color: #282323;
+  font-size: 18px;
+  line-height: 160%;
+  font-weight: 500;
+  padding: 15px 40px;
+}
+
+.about__askLink {
+  font-size: 18px;
+  line-height: 160%;
+  color: #ff4d4d;
+}
+
+.block__item {
+  max-width: 282px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 15px 65px rgba(65, 77, 68, 0.15);
+          box-shadow: 0px 15px 65px rgba(65, 77, 68, 0.15);
+  border-radius: 10px;
+  padding: 35px 24px 36px 35px;
+  margin: 15px 15px;
+}
+
+.block__icon {
+  margin-bottom: 25px;
+}
+
+.block__label {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 147%;
+  opacity: 0.8;
+  margin-bottom: 9px;
+}
+
+.block__text {
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.settingsIcon img {
+  -webkit-box-shadow: 1px 5px 30px rgba(215, 21, 21, 0.5);
+          box-shadow: 1px 5px 30px rgba(215, 21, 21, 0.5);
+  border-radius: 13px;
+}
+
+.userIcon img {
+  border-radius: 13px;
+  -webkit-box-shadow: 1px 5px 30px rgba(83, 215, 171, 0.5);
+          box-shadow: 1px 5px 30px rgba(83, 215, 171, 0.5);
+}
+
+.shieldIcon img {
+  border-radius: 13px;
+  -webkit-box-shadow: 1px 5px 30px rgba(238, 185, 42, 0.6);
+          box-shadow: 1px 5px 30px rgba(238, 185, 42, 0.6);
+}
+
+.codeIcon img {
+  border-radius: 13px;
+  -webkit-box-shadow: 1px 5px 30px rgba(230, 68, 214, 0.5);
+          box-shadow: 1px 5px 30px rgba(230, 68, 214, 0.5);
 }
 
 @media screen and (max-width: 1382px) {
