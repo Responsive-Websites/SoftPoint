@@ -1,32 +1,103 @@
 // header styles
 .header {
+  padding: 35px 0px;
   &__container {
   }
   &__body {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 950px) {
+      display: block;
+      text-align: center;
+    }
   }
   &__logo {
+    @media screen and (max-width: 950px) {
+      max-width: 200px;
+      margin: 0 auto;
+    }
   }
   &__nav {
   }
   &__buttons {
+    order: 3;
     display: flex;
+    align-items: center;
+    @media screen and (max-width: 950px) {
+      justify-content: center;
+      margin-top: 40px;
+    }
+    @media screen and (max-width: 600px) {
+      display: block;
+      margin-top: 60px;
+    }
   }
   &__login {
     margin-right: 23px;
+    opacity: 0.7;
+    color: #021206;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    @media screen and (max-width: 600px) {
+      & {
+        margin: 0px 0px 0px 0px;
+      }
+    }
   }
   &__signUp {
+    @media screen and (max-width: 600px) {
+      & {
+        margin: 20px 0px 0px 0px;
+      }
+    }
   }
 }
 
 .navigation {
   &__list {
     display: flex;
+    color: #021206;
+    @media screen and (max-width: 950px) {
+      justify-content: center;
+      margin-top: 30px;
+    }
+    @media screen and (max-width: 450px) {
+      & {
+        display: block;
+        margin-top: 50px;
+      }
+    }
   }
   &__item {
+    font-size: 18px;
+    line-height: 150%;
+    opacity: 0.5;
+
     &:not(:last-child) {
       margin: 0px 53px 0px 0px;
+      @media screen and (max-width: 950px) {
+        margin: 0px 73px 0px 0px;
+      }
+      @media screen and (max-width: 450px) {
+        & {
+          margin: 0px 0px 30px 0px;
+        }
+      }
+    }
+    @media screen and (max-width: 450px) {
+      & {
+        font-size: 20px;
+      }
+    }
+    & a {
+      color: inherit;
+    }
+    transition: 0.5s;
+    &:hover {
+      color: #18ca90;
+      opacity: 1;
     }
   }
 }

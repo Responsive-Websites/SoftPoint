@@ -44,8 +44,27 @@ body {
 }
 
 .button {
+  background-color: #f44545;
+  border-radius: 6px;
+  min-height: 57px;
+  padding: 0px 30px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  color: #ffffff;
+  &:hover {
+    background-color: #18ca90;
+    color: #021206;
+  }
 }
 .link {
+  color: inherit;
+
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 500;
 }
 .logo {
   flex: 0 1 147px;
