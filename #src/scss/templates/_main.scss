@@ -5,12 +5,18 @@
 
 //  heading block
 .heading {
+  @media screen and (max-width: 992px) {
+    margin-top: 40px;
+  }
   &__container {
   }
   &__body {
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
   }
   &__info {
   }
@@ -23,14 +29,41 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       color: #0b2349;
+      white-space: nowrap;
     }
     margin-bottom: 25px;
+
+    @media screen and (max-width: 992px) {
+      font-size: 45px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 35px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    @media screen and (max-width: 504px) {
+      font-size: 28px;
+    }
   }
   &__text {
     font-size: 21px;
     line-height: 160%;
     opacity: 0.7;
     margin-bottom: 30px;
+    @media screen and (max-width: 992px) {
+      font-size: 16px;
+      margin-bottom: 60px;
+    }
+    @media screen and (max-width: 768px) {
+      max-width: 530px;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 60px;
+    }
+    @media screen and (max-width: 504px) {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
   }
   &__form {
     display: flex;
@@ -45,6 +78,12 @@
       opacity: 0.5;
       font-size: 18px;
       line-height: 150%;
+      @media screen and (max-width: 504px) {
+        font-size: 14px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      max-width: none;
     }
   }
   &__button {
@@ -60,6 +99,14 @@
     display: flex;
     & img {
       margin-right: 30px;
+    }
+    @media screen and (max-width: 768px) {
+      justify-content: center;
+    }
+    @media screen and (max-width: 504px) {
+      & img {
+        margin-right: 15px;
+      }
     }
   }
 

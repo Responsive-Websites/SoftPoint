@@ -430,6 +430,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #0b2349;
+  white-space: nowrap;
 }
 
 .heading__text {
@@ -492,6 +493,21 @@ body {
   }
 }
 
+@media screen and (max-width: 992px) {
+  .heading {
+    margin-top: 40px;
+  }
+
+  .heading__label {
+    font-size: 45px;
+  }
+
+  .heading__text {
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (max-width: 950px) {
   .header__body {
     display: block;
@@ -522,6 +538,35 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .heading__body {
+    display: block;
+  }
+
+  .heading__label {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .heading__text {
+    max-width: 530px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  .heading__form {
+    max-width: none;
+  }
+
+  .heading__downloads {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .header__buttons {
     display: block;
@@ -534,6 +579,25 @@ body {
 
   .header__signUp {
     margin: 20px 0px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 504px) {
+  .heading__label {
+    font-size: 28px;
+  }
+
+  .heading__text {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .heading__form input {
+    font-size: 14px;
+  }
+
+  .heading__downloads img {
+    margin-right: 15px;
   }
 }
 
