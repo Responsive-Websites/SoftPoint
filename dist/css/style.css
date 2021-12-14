@@ -523,6 +523,10 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -641,6 +645,52 @@ h2 {
   }
 }
 
+@media screen and (max-width: 1320px) {
+  .about__blocks {
+    margin-left: 0px;
+  }
+
+  .about__info {
+    padding-left: 20px;
+  }
+
+  .block__item {
+    max-width: 275px;
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  .about__body {
+    display: block;
+  }
+
+  .about__blocks {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+
+  .block__item {
+    padding: 15px 14px 16px 15px;
+  }
+
+  .block__icon {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .block__label {
+    text-align: center;
+  }
+
+  .block__text {
+    font-size: 14px;
+  }
+
+  .block__text {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .partners__item {
     padding: 0px 10px;
@@ -648,6 +698,10 @@ h2 {
 }
 
 @media screen and (max-width: 992px) {
+  h2 {
+    font-size: 40px;
+  }
+
   .heading {
     margin-top: 40px;
   }
@@ -692,6 +746,16 @@ h2 {
   }
 }
 
+@media screen and (max-width: 932px) {
+  .about__blocks {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 610px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
 @media screen and (max-width: 769px) {
   .heading {
     margin-bottom: 30px;
@@ -699,6 +763,10 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
+  h2 {
+    font-size: 35px;
+  }
+
   .heading__body {
     display: block;
   }
@@ -725,11 +793,40 @@ h2 {
         -ms-flex-pack: center;
             justify-content: center;
   }
+
+  .partners {
+    margin-bottom: 103px;
+  }
+
+  .about__text {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 700px) {
   .partners__body {
     padding: 20px 0px;
+  }
+}
+
+@media screen and (max-width: 646px) {
+  .about__blocks {
+    display: block;
+  }
+
+  .about__info {
+    padding-left: 0px;
+  }
+
+  .block__item {
+    max-width: none;
+    width: 100%;
+    margin: 15px 0px;
+  }
+
+  .block__text {
+    max-width: 200px;
+    margin: 0 auto;
   }
 }
 
@@ -745,6 +842,29 @@ h2 {
 
   .header__signUp {
     margin: 20px 0px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h2 {
+    font-size: 28px;
+  }
+
+  .partners {
+    margin-bottom: 50px;
+  }
+
+  .about__text {
+    font-size: 15px;
+  }
+
+  .about__buttons {
+    display: block;
+  }
+
+  .about__button {
+    margin-bottom: 20px;
+    margin-right: 0px;
   }
 }
 

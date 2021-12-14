@@ -78,4 +78,13 @@ h2 {
   line-height: 148%;
   font-weight: 600;
   margin-bottom: 20px;
+  @media screen and (max-width: 992px) {
+    font-size: 40px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 35px;
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 28px;
+  }
 }

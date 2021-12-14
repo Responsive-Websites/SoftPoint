@@ -138,6 +138,13 @@
 .partners {
   background-color: #f4fdfa;
   margin-bottom: 163px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 103px;
+  }
+  @media screen and (max-width: 576px) {
+    margin-bottom: 50px;
+  }
   &__container {
   }
   &__body {
@@ -176,16 +183,43 @@
   }
   &__body {
     display: flex;
+    flex-flow: row-reverse;
     align-items: center;
     justify-content: space-between;
+    @media screen and (max-width: 1190px) {
+      display: block;
+    }
   }
   &__blocks {
     display: flex;
     flex-flow: row wrap;
     margin-left: -80px;
+
+    @media screen and (max-width: 1320px) {
+      margin-left: 0px;
+    }
+
+    @media screen and (max-width: 1190px) {
+      flex-wrap: nowrap;
+    }
+    @media screen and (max-width: 932px) {
+      flex-wrap: wrap;
+      max-width: 610px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    @media screen and (max-width: 646px) {
+      display: block;
+    }
   }
   &__info {
     max-width: 548px;
+    @media screen and (max-width: 1320px) {
+      padding-left: 20px;
+    }
+    @media screen and (max-width: 646px) {
+      padding-left: 0px;
+    }
   }
   &__label {
   }
@@ -195,10 +229,20 @@
     & p:not(:last-child) {
       margin-bottom: 16px;
     }
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 15px;
+    }
   }
   &__buttons {
     display: flex;
     align-items: center;
+    @media screen and (max-width: 576px) {
+      display: block;
+    }
   }
   &__button {
     margin-right: 25px;
@@ -207,6 +251,10 @@
     line-height: 160%;
     font-weight: 500;
     padding: 15px 40px;
+    @media screen and (max-width: 576px) {
+      margin-bottom: 20px;
+      margin-right: 0px;
+    }
   }
   &__link {
   }
@@ -214,6 +262,8 @@
     font-size: 18px;
     line-height: 160%;
     color: #ff4d4d;
+    @media screen and (max-width: 576px) {
+    }
   }
 }
 
@@ -225,9 +275,24 @@
     border-radius: 10px;
     padding: 35px 24px 36px 35px;
     margin: 15px 15px;
+    @media screen and (max-width: 1320px) {
+      max-width: 275px;
+    }
+    @media screen and (max-width: 1190px) {
+      padding: 15px 14px 16px 15px;
+    }
+    @media screen and (max-width: 646px) {
+      max-width: none;
+      width: 100%;
+      margin: 15px 0px;
+    }
   }
   &__icon {
     margin-bottom: 25px;
+    @media screen and (max-width: 1190px) {
+      margin-bottom: 20px;
+      text-align: center;
+    }
   }
   &__label {
     font-weight: 600;
@@ -235,10 +300,23 @@
     line-height: 147%;
     opacity: 0.8;
     margin-bottom: 9px;
+    @media screen and (max-width: 1190px) {
+      text-align: center;
+    }
   }
   &__text {
     font-size: 16px;
     line-height: 160%;
+    @media screen and (max-width: 1190px) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: 1190px) {
+      text-align: center;
+    }
+    @media screen and (max-width: 646px) {
+      max-width: 200px;
+      margin: 0 auto;
+    }
   }
 }
 .settingsIcon img {
