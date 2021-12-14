@@ -1,12 +1,21 @@
 .main {
   &__heading {
   }
+  &__partners {
+  }
 }
 
 //  heading block
 .heading {
+  margin-bottom: 110px;
   @media screen and (max-width: 992px) {
     margin-top: 40px;
+  }
+  @media screen and (max-width: 769px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 500px) {
+    margin-bottom: 20px;
   }
   &__container {
   }
@@ -122,4 +131,36 @@
     }
   }
 }
+//-------------------------------
+
+//  partners block
+
+.partners {
+  background-color: #f4fdfa;
+  margin-bottom: 163px;
+  &__container {
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    padding: 53px 0px;
+    align-items: center;
+    @media screen and (max-width: 700px) {
+      padding: 20px 0px;
+    }
+  }
+  &__item {
+    max-width: 170px;
+
+    @media screen and (max-width: 1000px) {
+      padding: 0px 10px;
+    }
+  }
+  &__icon {
+    width: 100%;
+  }
+}
+.container {
+}
+
 //-------------------------------
