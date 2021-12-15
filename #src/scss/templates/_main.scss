@@ -13,6 +13,8 @@
   }
   &__pricing {
   }
+  &__plans {
+  }
 }
 
 //  heading block
@@ -718,3 +720,115 @@ input[type="range"]::-webkit-slider-thumb:active {
   line-height: 80%;
   color: #ffffff;
 }
+
+//  plans block
+
+.plans {
+  margin-top: 88px;
+  &__container {
+  }
+  &__body {
+    display: flex;
+    @media screen and (max-width: 1077px) {
+      display: block;
+    }
+  }
+  &__item {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    @media screen and (max-width: 1077px) {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.card {
+  padding: 35px 0px;
+  margin: 0px 15px;
+  flex: 0 1 33.3333333%;
+  text-align: center;
+
+  &__label {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 170%;
+    opacity: 0.5;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    @media screen and (max-width: 429px) {
+      font-size: 18px;
+    }
+  }
+  &__price {
+    font-weight: 600;
+    font-size: 43px;
+    line-height: 100%;
+    color: #021206;
+    text-align: center;
+    margin-bottom: 37px;
+    @media screen and (max-width: 429px) {
+      font-size: 33px;
+    }
+  }
+  &__list {
+    margin-bottom: 42px;
+  }
+  &__itemList {
+    display: flex;
+    padding: 22px 20px;
+    justify-content: space-between;
+    outline: 1px solid #e6e8e8;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    color: #4e5a51;
+    & a {
+      color: inherit;
+
+      &::before {
+        content: "";
+        width: 50px;
+        height: 50px;
+        background: url("../../img/icons/ok.svg") center no-repeat;
+        padding-left: 30px;
+      }
+    }
+    @media screen and (max-width: 429px) {
+      font-size: 14px;
+      padding: 20px 5px;
+    }
+  }
+  &__button {
+    background-color: #ffffff;
+    display: inline;
+    padding: 13px 76px;
+    border: 2px solid #fddada;
+    border-radius: 6px;
+    color: #f44545;
+    transition: 0.5s;
+    &:hover {
+      border: none;
+
+      background-color: #f44545;
+      color: #ffffff;
+    }
+    @media screen and (max-width: 1077px) {
+      display: block;
+      margin: 0px 15px;
+    }
+    @media screen and (max-width: 429px) {
+      font-size: 16px;
+    }
+  }
+  transition: 0.5s;
+  &:hover {
+    box-shadow: 0px 20px 100px rgba(2, 18, 6, 0.15);
+  }
+}
+.notAvailable {
+  color: #818983;
+  text-decoration: line-through;
+}
+//-------------------------------

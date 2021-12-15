@@ -919,6 +919,112 @@ input[type=range]::-webkit-slider-thumb {
   color: #ffffff;
 }
 
+.plans {
+  margin-top: 88px;
+}
+
+.plans__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.plans__item {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.card {
+  padding: 35px 0px;
+  margin: 0px 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.3333333%;
+          flex: 0 1 33.3333333%;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card__label {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 170%;
+  opacity: 0.5;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.card__price {
+  font-weight: 600;
+  font-size: 43px;
+  line-height: 100%;
+  color: #021206;
+  text-align: center;
+  margin-bottom: 37px;
+}
+
+.card__list {
+  margin-bottom: 42px;
+}
+
+.card__itemList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 22px 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  outline: 1px solid #e6e8e8;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #4e5a51;
+}
+
+.card__itemList a {
+  color: inherit;
+}
+
+.card__itemList a::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: url("../../img/icons/ok.svg") center no-repeat;
+  padding-left: 30px;
+}
+
+.card__button {
+  background-color: #ffffff;
+  display: inline;
+  padding: 13px 76px;
+  border: 2px solid #fddada;
+  border-radius: 6px;
+  color: #f44545;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card__button:hover {
+  border: none;
+  background-color: #f44545;
+  color: #ffffff;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 20px 100px rgba(2, 18, 6, 0.15);
+          box-shadow: 0px 20px 100px rgba(2, 18, 6, 0.15);
+}
+
+.notAvailable {
+  color: #818983;
+  text-decoration: line-through;
+}
+
 @media screen and (max-width: 1469px) {
   .software__image {
     margin-right: -50px;
@@ -1020,6 +1126,21 @@ input[type=range]::-webkit-slider-thumb {
 
   .block__text {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 1077px) {
+  .plans__body {
+    display: block;
+  }
+
+  .plans__item {
+    margin-bottom: 50px;
+  }
+
+  .card__button {
+    display: block;
+    margin: 0px 15px;
   }
 }
 
@@ -1318,6 +1439,25 @@ input[type=range]::-webkit-slider-thumb {
 
   .navigation__item {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 429px) {
+  .card__label {
+    font-size: 18px;
+  }
+
+  .card__price {
+    font-size: 33px;
+  }
+
+  .card__itemList {
+    font-size: 14px;
+    padding: 20px 5px;
+  }
+
+  .card__button {
+    font-size: 16px;
   }
 }
 
