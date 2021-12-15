@@ -174,4 +174,37 @@
       </div>
     </div>
   </section>
+  <section class="main__pricing pricing">
+    <div class="pricing__container container">
+      <div class="pricing__body">
+        <h2 class="pricing__label">Best Pricing Plan</h2>
+        <div class="pricing__text">
+          Empowering the Internet Generation. Driving the Communication Revolution. Technology at
+          the speed of life. Empowered by Innovation.
+        </div>
+        <div class="pricing__term">
+          <p>Monthly</p>
+          <div class="switch-container">
+            <input type="checkbox" id="switch" />
+            <label for="switch" class="switch-label">
+              <div class="switch-rail">
+                <div class="switch-slider"></div>
+              </div>
+            </label>
+          </div>
+          <p>Quarterly</p>
+        </div>
+        <div class="pricing__save">Save up to 40%</div>
+        <div class="pricing__range">
+          <div class="slider">
+            <div class="slider__info">
+              $
+              <output id="rangevalue">50</output>
+            </div>
+            <input type="range" min="0" max="100" onchange="rangevalue.value=value" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
