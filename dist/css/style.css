@@ -708,6 +708,57 @@ h2 {
   margin-left: -220px;
 }
 
+.software {
+  background-color: #f4fdfa;
+}
+
+.software__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.software__text {
+  opacity: 0.7;
+  margin-bottom: 30px;
+  max-width: 480px;
+}
+
+.software__text p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.software__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 15px 33px;
+  font-size: 20px;
+  line-height: 160%;
+  font-weight: 500;
+}
+
+.software__image {
+  margin-top: -100px;
+  margin-right: -150px;
+}
+
+@media screen and (max-width: 1469px) {
+  .software__image {
+    margin-right: -50px;
+  }
+}
+
 @media screen and (max-width: 1382px) {
   .heading__image {
     margin-right: 0px;
@@ -720,6 +771,10 @@ h2 {
 }
 
 @media screen and (max-width: 1363px) {
+  .serving {
+    margin-bottom: 80px;
+  }
+
   .serving__image {
     margin-left: 0px;
     max-width: 591px;
@@ -749,6 +804,23 @@ h2 {
   }
 
   .analytics__image img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1283px) {
+  .software__image {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 1219px) {
+  .software__image {
+    margin-top: 0px;
+    max-width: 500px;
+  }
+
+  .software__image img {
     width: 100%;
   }
 }
@@ -818,6 +890,30 @@ h2 {
 
   .serving__image {
     margin: 0 auto;
+  }
+
+  .software {
+    margin-top: -120px;
+  }
+
+  .software__body {
+    display: block;
+    padding: 35px 0px;
+    text-align: center;
+  }
+
+  .software__text {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .software__button {
+    display: block;
+    margin: 0px 30px;
+  }
+
+  .software__image {
+    display: none;
   }
 }
 
@@ -1020,6 +1116,12 @@ h2 {
 @media screen and (max-width: 500px) {
   .heading {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 483px) {
+  .software__text {
+    font-size: 14px;
   }
 }
 
