@@ -3,6 +3,10 @@
   }
   &__partners {
   }
+  &__about {
+  }
+  &__analytics {
+  }
 }
 
 //  heading block
@@ -172,11 +176,8 @@
 
 //  about block
 
-.main {
-  &__about {
-  }
-}
 .about {
+  margin-bottom: 90px;
   &_askLink {
   }
   &__container {
@@ -266,7 +267,6 @@
     }
   }
 }
-
 .block {
   &__item {
     max-width: 282px;
@@ -335,7 +335,82 @@
   border-radius: 13px;
   box-shadow: 1px 5px 30px rgba(230, 68, 214, 0.5);
 }
-.button {
+
+//-------------------------------
+
+//  about block
+
+.analytics {
+  &__container {
+  }
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 993px) {
+      display: block;
+    }
+  }
+  &__info {
+  }
+  &__label {
+    @media screen and (max-width: 993px) {
+      // text-align: center;
+    }
+  }
+  &__text {
+    opacity: 0.7;
+    margin-bottom: 20px;
+    max-width: 448px;
+    @media screen and (max-width: 993px) {
+      // margin: 0 auto;
+      // text-align: center;
+    }
+    @media screen and (max-width: 457px) {
+      font-size: 16px;
+    }
+  }
+  &__list {
+    @media screen and (max-width: 993px) {
+      margin-top: 30px;
+      max-width: 500px;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+  }
+  &__item {
+    opacity: 0.7;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+    &::before {
+      content: "";
+      width: 30px;
+      height: 30px;
+      background: url("../../img/icons/ok.svg") left no-repeat;
+      padding-left: 30px;
+    }
+    @media screen and (max-width: 457px) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: 373px) {
+      font-size: 11.5px;
+    }
+  }
+  &__image {
+    margin-right: -190px;
+    @media screen and (max-width: 1320px) {
+      margin-right: 0px;
+      max-width: 594px;
+      & img {
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 993px) {
+      margin: 0 auto;
+    }
+  }
 }
 
 //-------------------------------

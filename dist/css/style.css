@@ -519,6 +519,10 @@ h2 {
   width: 100%;
 }
 
+.about {
+  margin-bottom: 90px;
+}
+
 .about__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -634,6 +638,44 @@ h2 {
           box-shadow: 1px 5px 30px rgba(230, 68, 214, 0.5);
 }
 
+.analytics__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.analytics__text {
+  opacity: 0.7;
+  margin-bottom: 20px;
+  max-width: 448px;
+}
+
+.analytics__item {
+  opacity: 0.7;
+}
+
+.analytics__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.analytics__item::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url("../../img/icons/ok.svg") left no-repeat;
+  padding-left: 30px;
+}
+
+.analytics__image {
+  margin-right: -190px;
+}
+
 @media screen and (max-width: 1382px) {
   .heading__image {
     margin-right: 0px;
@@ -656,6 +698,15 @@ h2 {
 
   .block__item {
     max-width: 275px;
+  }
+
+  .analytics__image {
+    margin-right: 0px;
+    max-width: 594px;
+  }
+
+  .analytics__image img {
+    width: 100%;
   }
 }
 
@@ -694,6 +745,23 @@ h2 {
 @media screen and (max-width: 1000px) {
   .partners__item {
     padding: 0px 10px;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .analytics__body {
+    display: block;
+  }
+
+  .analytics__list {
+    margin-top: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .analytics__image {
+    margin: 0 auto;
   }
 }
 
@@ -893,6 +961,16 @@ h2 {
   }
 }
 
+@media screen and (max-width: 457px) {
+  .analytics__text {
+    font-size: 16px;
+  }
+
+  .analytics__item {
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .navigation__list {
     display: block;
@@ -905,5 +983,11 @@ h2 {
 
   .navigation__item {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 373px) {
+  .analytics__item {
+    font-size: 11.5px;
   }
 }
