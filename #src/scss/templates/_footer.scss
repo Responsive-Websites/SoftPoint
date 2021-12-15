@@ -1,0 +1,97 @@
+.footer {
+  margin-top: 100px;
+  background-color: #f4fdfa;
+  padding: 50px 0px;
+  &__container {
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 967px) {
+      flex-flow: row wrap;
+    }
+  }
+  &__logo {
+    & img {
+      width: 147px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+    & p {
+      max-width: 244px;
+      font-size: 16px;
+      line-height: 160%;
+      opacity: 0.7;
+      @media screen and (max-width: 585px) {
+        margin: 0 auto;
+      }
+    }
+    @media screen and (max-width: 967px) {
+      flex: 0 1 50%;
+    }
+    @media screen and (max-width: 585px) {
+      text-align: center;
+    }
+    @media screen and (max-width: 497px) {
+      flex: 0 1 100%;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__use {
+    @media screen and (max-width: 967px) {
+      flex: 0 1 50%;
+      margin-bottom: 40px;
+    }
+    @media screen and (max-width: 585px) {
+      text-align: center;
+    }
+    @media screen and (max-width: 497px) {
+      flex: 0 1 100%;
+    }
+  }
+  &__label {
+    margin-bottom: 20px;
+  }
+  &__nav {
+  }
+  &__navItem {
+    font-size: 16px;
+    line-height: 160%;
+    color: #021206;
+    opacity: 0.7;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    & a {
+      color: inherit;
+      transition: 0.5s;
+      &:hover {
+        color: #0f855d;
+      }
+    }
+  }
+  &__support {
+    @media screen and (max-width: 967px) {
+      flex: 0 1 50%;
+    }
+    @media screen and (max-width: 585px) {
+      text-align: center;
+    }
+    @media screen and (max-width: 497px) {
+      flex: 0 1 100%;
+      margin-bottom: 40px;
+    }
+  }
+  &__contacts {
+    @media screen and (max-width: 967px) {
+      flex: 0 1 50%;
+    }
+    @media screen and (max-width: 585px) {
+      text-align: center;
+    }
+    @media screen and (max-width: 497px) {
+      flex: 0 1 100%;
+    }
+  }
+}
